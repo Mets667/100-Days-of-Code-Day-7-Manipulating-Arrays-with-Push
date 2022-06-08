@@ -1,0 +1,53 @@
+Manipulate Arrays With push()
+
+Examples:
+
+const arr1 = [1, 2, 3];
+arr1.push(4);
+
+const arr2 = ["Stimpson", "J", "cat"];
+arr2.push(["happy", "joy"]);
+arr1 now has the value [1, 2, 3, 4] and arr2 has the value ["Stimpson", "J", "cat", ["happy", "joy"]].
+
+Push ["dog", 3] onto the end of the myArray variable.
+
+I had to figure this out because I forgot how they wanted this. After a hint, you just add a new append, so it goes like this:
+
+myArray = (["dog, 3]);       and it should be set.
+
+Manipulate Arrays With pop()
+
+Any type of entry can be popped off of an array - numbers, strings, even nested arrays.
+
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+The first console.log will display the value 6, and the second will display the value [1, 4].
+
+Use the .pop() function to remove the last item from myArray and assign the popped off value to a new variable, removedFromMyArray.
+
+Question: // Setup
+const myArray = [["John", 23], ["cat", 2]];
+
+// Only change code below this line
+var removedFromMyArray = myArray.pop(["cat", 2]);  <=====Answer.
+
+Manipulate Arrays With shift()
+
+That's where .shift() comes in. It works just like .pop(), except it removes the first element instead of the last.
+
+Example:
+
+const ourArray = ["Stimpson", "J", ["cat"]];
+const removedFromOurArray = ourArray.shift();
+removedFromOurArray would have a value of the string Stimpson, and ourArray would have ["J", ["cat"]].
+
+Use the .shift() function to remove the first item from myArray and assign the "shifted off" value to a new variable, removedFromMyArray.
+
+// Setup
+const myArray = [["John", 23], ["dog", 3]];
+
+// Only change code below this line
+const removedFromMyArray = myArray.shift(["John", 23]);  <==== Answer.
+
